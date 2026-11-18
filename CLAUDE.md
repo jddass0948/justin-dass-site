@@ -26,6 +26,11 @@ Dark editorial look modeled on lamalama.com's style (look and motion only, no co
 4. Voice: concise, plain business language. No em dashes or en dashes. No buzzwords (leverage, synergy, scalable, seamless, etc.). "ASTERRA" always all caps.
 5. PartnerOne acquisitions line approved by Justin (Nov 18, 2026): "I led revenue strategy across 5 acquisitions of $100M+ each." Lives in the About "( Before )" paragraph.
 6. No company logos on the site. The Experience list stays text only.
+7. Headline positioning: "Global Revenue Leader" (kicker, page title, OG tags). Approved Nov 18, 2026.
+8. Numbers strip in About uses pre-ASTERRA facts only (3 exits, 5 acquisitions, 20 PE companies). Justin wants no ASTERRA metrics there to avoid conflict of interest.
+9. Experience rows open on click ( + ) to show LinkedIn detail, promotions (Autodesk, Epicor) and links (Dass Strategic Group site, 2 SupplyPro press release PDFs on supplypro.com).
+10. Link preview image is `og.png` (1200x630) at the repo root. Regenerate it if the title or headline changes.
+11. Open question: hero bar says "20+ years" while LinkedIn About says "15+ years". Pick one with Justin.
 
 ## Requests in the queue (not started)
 

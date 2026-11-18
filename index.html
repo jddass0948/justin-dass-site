@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Justin Dass | Revenue Leader for AI and Enterprise Software</title>
-  <meta name="description" content="Justin Dass is a revenue leader for AI and enterprise software companies. CRO and Global Vice President, Revenue at ASTERRA. Based in San Diego.">
-  <meta property="og:title" content="Justin Dass | Revenue Leader for AI and Enterprise Software">
-  <meta property="og:description" content="Revenue leader for AI and enterprise software companies. Global sales, channel and go-to-market. San Diego.">
+  <title>Justin Dass | Global Revenue Leader, AI and Enterprise Software</title>
+  <meta name="description" content="Justin Dass is a global revenue leader for AI and enterprise software companies. CRO and Global Vice President, Revenue at ASTERRA. Based in San Diego.">
+  <meta property="og:title" content="Justin Dass | Global Revenue Leader, AI and Enterprise Software">
+  <meta property="og:description" content="Global revenue leader for AI and enterprise software companies. Sales teams, partner channels and go-to-market that hit the number.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.justindass.com/">
+  <meta property="og:image" content="https://www.justindass.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Justin Dass, global revenue leader for AI and enterprise software">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Justin Dass | Global Revenue Leader, AI and Enterprise Software">
+  <meta name="twitter:image" content="https://www.justindass.com/og.png">
   <meta name="theme-color" content="#1a1c1c">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231a1c1c'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23f9f4eb' text-anchor='middle'%3EJD%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -164,6 +172,29 @@
     .row .desc { color: var(--muted); font-size: clamp(16px, 1.15vw, 19px); line-height: 1.45; }
     .row .num { color: var(--muted); display: block; margin-bottom: 10px; }
     .edu { padding: 28px var(--pad) 0; color: var(--muted); }
+    .edu + .edu { padding-top: 10px; }
+    .work .row { grid-template-columns: 1.1fr 1fr 1.7fr; }
+
+    /* Experience rows open for detail */
+    .xp .row { cursor: pointer; }
+    .xp .plus { background: none; border: 0; padding: 0; cursor: pointer; text-align: left; align-self: start; }
+    .xp .plus:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
+    .promo { display: block; margin-top: 10px; color: var(--ink); }
+    .more { grid-column: 2 / -1; display: grid; grid-template-rows: 0fr; margin-top: -24px; transition: grid-template-rows .45s cubic-bezier(.19, 1, .22, 1); cursor: auto; }
+    .more > div { overflow: hidden; min-height: 0; }
+    .more .in { padding-top: 22px; max-width: 760px; }
+    .row.open .more { grid-template-rows: 1fr; }
+    .more p { color: var(--muted); font-size: clamp(15px, 1.05vw, 17px); line-height: 1.5; }
+    .more p + p { margin-top: 12px; }
+    .more .mono { display: block; color: var(--ink); margin-bottom: 4px; }
+    .more a, .cols a { color: var(--ink); border-bottom: 1px solid var(--line); transition: border-color .3s ease; }
+    .more a:hover, .cols a:hover { border-color: var(--ink); }
+
+    /* Numbers */
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 56px); padding: 0 var(--pad) clamp(70px, 9vw, 130px); }
+    .stat { border-top: 1px solid var(--line); padding-top: 18px; }
+    .stat b { display: block; font-weight: 400; font-size: clamp(56px, 7vw, 120px); line-height: 0.9; letter-spacing: -0.04em; }
+    .stat .mono { display: block; margin-top: 16px; color: var(--muted); max-width: 260px; }
 
     .xp { padding-top: clamp(100px, 13vw, 200px); }
     .work { padding-top: clamp(100px, 13vw, 200px); }
@@ -192,6 +223,10 @@
       .cols { grid-template-columns: 1fr; }
       .row { grid-template-columns: 1fr; gap: 14px; }
       .row .plus { display: none; }
+      .work .row { grid-template-columns: 1fr; }
+      .xp .row .plus { display: block; order: 5; }
+      .more { grid-column: 1 / -1; order: 6; margin-top: -14px; }
+      .stats { grid-template-columns: 1fr; }
       .big { text-indent: 1.6em; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -220,11 +255,11 @@
     <canvas id="dots" aria-hidden="true"></canvas>
     <div class="hero-grid">
       <div>
-        <p class="kicker mono scr">[ Revenue &middot; AI &middot; Enterprise Software ]</p>
+        <p class="kicker mono scr">[ Global Revenue Leader &middot; AI &middot; Enterprise Software ]</p>
         <h1><span class="line"><span>Justin</span></span><span class="line"><span>Dass</span></span></h1>
       </div>
       <div>
-        <p class="lede">Revenue leader for AI and enterprise software companies. I build global sales teams, partner channels and go-to-market plans that hit the number.</p>
+        <p class="lede">I grow revenue for AI and enterprise software companies worldwide. I build the sales teams, partner channels and go-to-market plans that hit the number, from Autodesk to PE-backed portfolios.</p>
         <div class="hero-ctas">
           <a class="btn primary" href="mailto:Justin.Dass.2027@gmail.com">Email me <span>&rarr;</span></a>
           <a class="btn ghost" href="https://www.linkedin.com/in/justin-dass-cro-global-sales-leader/" target="_blank" rel="noopener">Connect on LinkedIn <span>+</span></a>
@@ -246,10 +281,15 @@
       <p class="big" id="big">I've spent 20+ years growing revenue in enterprise software, SaaS, ERP and AI, at companies ranging from early-stage to Autodesk to private equity portfolios.</p>
       <span class="sec-tag mono scr">[ About ]</span>
     </div>
+    <div class="stats">
+      <div class="stat rv"><b>3</b><span class="mono">Company exits</span></div>
+      <div class="stat rv"><b>5</b><span class="mono">Acquisitions of $100M+ each at PartnerOne</span></div>
+      <div class="stat rv"><b>20</b><span class="mono">PE-backed software companies in the PartnerOne portfolio</span></div>
+    </div>
     <div class="cols">
       <p class="rv"><span class="mono scr">( Today )</span>Today I'm CRO and Global Vice President, Revenue at ASTERRA. We sell AI-powered, satellite-based infrastructure intelligence to utilities, municipalities and enterprise infrastructure organizations, and I lead worldwide sales across 65+ countries in the Americas, EMEA and APAC.</p>
-      <p class="rv"><span class="mono scr">( Before )</span>Before ASTERRA, I was Chief Revenue Officer at PartnerOne, a private equity firm, running revenue and marketing strategy across a portfolio of 20 global companies. I led revenue strategy across 5 acquisitions of $100M+ each. Through Dass Strategic Group, I also advise AI, SaaS and PE-backed companies on go-to-market and sales.</p>
-      <p class="rv"><span class="mono scr">( Roots )</span>I grew up in Southwest Minnesota and still run on those values: do the work, tell the truth about the forecast, and follow through on what you said you'd do.</p>
+      <p class="rv"><span class="mono scr">( Before )</span>Before ASTERRA, I was Chief Revenue Officer at PartnerOne, a private equity firm, running revenue and marketing strategy across a portfolio of 20 global companies. I led revenue strategy across 5 acquisitions of $100M+ each. Through <a href="https://www.dassstrategic.com/" target="_blank" rel="noopener">Dass Strategic Group</a>, I also advise AI, SaaS and PE-backed companies on go-to-market and sales.</p>
+      <p class="rv"><span class="mono scr">( Roots )</span>I grew up in small-town Minnesota, where family came first and nobody left a job half done. I still run on those values: do the work, tell the truth about the forecast, and follow through on what you said you'd do.</p>
     </div>
   </section>
 
@@ -259,11 +299,11 @@
       <span class="mono scr">[ 05 Areas ]</span>
     </div>
     <div class="rows">
-      <div class="row rv"><div class="name"><span class="num mono">01</span>Revenue leadership</div><div class="chips mono"><span class="chip scr">Forecast</span><span class="chip scr">Pipeline</span></div><span class="plus mono">( + )</span><p class="desc">Global forecasting, pipeline discipline and an honest number, up and down.</p></div>
-      <div class="row rv"><div class="name"><span class="num mono">02</span>AI go-to-market</div><div class="chips mono"><span class="chip scr">AI</span><span class="chip scr">Data</span><span class="chip scr">GTM</span></div><span class="plus mono">( + )</span><p class="desc">Taking AI and data products to enterprise and public sector buyers, and putting AI to work inside the sales org to sell, forecast and report faster.</p></div>
-      <div class="row rv"><div class="name"><span class="num mono">03</span>Enterprise software sales</div><div class="chips mono"><span class="chip scr">Enterprise</span><span class="chip scr">Public sector</span></div><span class="plus mono">( + )</span><p class="desc">Complex, multi-stakeholder deals with global enterprises, utilities and government.</p></div>
-      <div class="row rv"><div class="name"><span class="num mono">04</span>Channel and partner programs</div><div class="chips mono"><span class="chip scr">Resellers</span><span class="chip scr">Partners</span></div><span class="plus mono">( + )</span><p class="desc">Recruiting, onboarding and enabling resellers and partners across North America and international markets.</p></div>
-      <div class="row rv"><div class="name"><span class="num mono">05</span>Building teams</div><div class="chips mono"><span class="chip scr">Hiring</span><span class="chip scr">Coaching</span></div><span class="plus mono">( + )</span><p class="desc">Hiring, coaching and holding people to a high bar, with real support behind it.</p></div>
+      <div class="row rv"><div class="name"><span class="num mono">01</span>Revenue leadership</div><div class="chips mono"><span class="chip scr">Forecast</span><span class="chip scr">Pipeline</span></div><p class="desc">Global forecasting, pipeline discipline and an honest number, up and down.</p></div>
+      <div class="row rv"><div class="name"><span class="num mono">02</span>AI go-to-market</div><div class="chips mono"><span class="chip scr">AI</span><span class="chip scr">Data</span><span class="chip scr">GTM</span></div><p class="desc">Taking AI and data products to enterprise and public sector buyers, and putting AI to work inside the sales org to sell, forecast and report faster.</p></div>
+      <div class="row rv"><div class="name"><span class="num mono">03</span>Enterprise software sales</div><div class="chips mono"><span class="chip scr">Enterprise</span><span class="chip scr">Public sector</span></div><p class="desc">Complex, multi-stakeholder deals with global enterprises, utilities and government.</p></div>
+      <div class="row rv"><div class="name"><span class="num mono">04</span>Channel and partner programs</div><div class="chips mono"><span class="chip scr">Resellers</span><span class="chip scr">Partners</span></div><p class="desc">Recruiting, onboarding and enabling resellers and partners across North America and international markets.</p></div>
+      <div class="row rv"><div class="name"><span class="num mono">05</span>Building teams</div><div class="chips mono"><span class="chip scr">Hiring</span><span class="chip scr">Coaching</span></div><p class="desc">Hiring, coaching and holding people to a high bar, with real support behind it.</p></div>
     </div>
   </section>
 
@@ -273,14 +313,15 @@
       <span class="mono scr">[ 2000 - Present ]</span>
     </div>
     <div class="rows">
-      <div class="row rv"><div class="name">ASTERRA</div><div class="chips mono"><span class="chip scr">2026 - Present</span></div><span class="plus mono">( + )</span><p class="desc">CRO | Global Vice President, Revenue</p></div>
-      <div class="row rv"><div class="name">PartnerOne</div><div class="chips mono"><span class="chip scr">2025 - 2026</span></div><span class="plus mono">( + )</span><p class="desc">Chief Revenue Officer, Private Equity Portfolio Operator</p></div>
-      <div class="row rv"><div class="name">Dass Strategic Group</div><div class="chips mono"><span class="chip scr">2000 - Present</span></div><span class="plus mono">( + )</span><p class="desc">Founder and Principal, GTM and Sales Advisory</p></div>
-      <div class="row rv"><div class="name">OutSystems</div><div class="chips mono"><span class="chip scr">2023 - 2025</span></div><span class="plus mono">( + )</span><p class="desc">Director, Enterprise Sales, AMER</p></div>
-      <div class="row rv"><div class="name">Autodesk</div><div class="chips mono"><span class="chip scr">2020 - 2023</span></div><span class="plus mono">( + )</span><p class="desc">Director, Business Development and Digital Sales, WW Sales</p></div>
-      <div class="row rv"><div class="name">SupplyPro</div><div class="chips mono"><span class="chip scr">2017 - 2020</span></div><span class="plus mono">( + )</span><p class="desc">Vice President, Global Business Development</p></div>
-      <div class="row rv"><div class="name">Epicor Software</div><div class="chips mono"><span class="chip scr">2011 - 2017</span></div><span class="plus mono">( + )</span><p class="desc">Director, Business Development, Americas</p></div>
+      <div class="row rv"><div class="name">ASTERRA</div><div class="chips mono"><span class="chip scr">2026 - Present</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp1">( + )</button><p class="desc">CRO | Global Vice President, Revenue</p><div class="more" id="xp1"><div><div class="in"><p><span class="mono">La Jolla / San Diego, California</span>I lead worldwide sales in 65+ countries and global go-to-market for ASTERRA, a pioneer in satellite-based, AI-powered infrastructure intelligence. Customers are utilities, municipalities and enterprise infrastructure organizations across North America, South America, EMEA, APAC and LATAM.</p><p>The focus is revenue growth, strategic partnerships and growing ASTERRA's presence in global infrastructure and water markets.</p></div></div></div></div>
+      <div class="row rv"><div class="name">PartnerOne</div><div class="chips mono"><span class="chip scr">2025 - 2026</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp2">( + )</button><p class="desc">Chief Revenue Officer, Private Equity Portfolio Operator</p><div class="more" id="xp2"><div><div class="in"><p><span class="mono">London Area, United Kingdom</span>Chief Revenue Officer and marketing strategy across a portfolio of 20 global, private equity-backed software companies.</p><p>Responsible for revenue growth, AI implementation and agentic AI rollout, go-to-market execution, demand generation, channel strategy and commercial transformation. Led revenue strategy across 5 acquisitions of $100M+ each.</p></div></div></div></div>
+      <div class="row rv"><div class="name">Dass Strategic Group</div><div class="chips mono"><span class="chip scr">2000 - Present</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp3">( + )</button><p class="desc">Founder and Principal, GTM and Sales Advisory</p><div class="more" id="xp3"><div><div class="in"><p><span class="mono">San Diego, California</span>GTM and sales advisory for technology, AI, agentic AI, SaaS, public sector, global enterprise and PE-backed companies. Selective work across sales strategy, AI implementation, GTM execution, partnerships and revenue operations.</p><p><a href="https://www.dassstrategic.com/" target="_blank" rel="noopener">dassstrategic.com &#8599;</a></p></div></div></div></div>
+      <div class="row rv"><div class="name">OutSystems</div><div class="chips mono"><span class="chip scr">2023 - 2025</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp4">( + )</button><p class="desc">Director, Enterprise Sales, AMER</p><div class="more" id="xp4"><div><div class="in"><p><span class="mono">Boston, Massachusetts</span>Led revenue growth for OutSystems, a global enterprise software company with about 2,000 employees, with a focus on AI, enterprise application development, low-code modernization and agentic AI adoption.</p></div></div></div></div>
+      <div class="row rv"><div class="name">Autodesk</div><div class="chips mono"><span class="chip scr">2020 - 2023</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp5">( + )</button><p class="desc">Director, Business Development and Digital Sales, WW Sales<span class="promo mono">&uarr; Promoted from Senior Manager</span></p><div class="more" id="xp5"><div><div class="in"><p><span class="mono">Nov 2020 - Aug 2023 &middot; San Francisco Bay Area</span>Director, Business Development and Digital Sales, WW Sales. Global cross-functional team leadership and new business development.</p><p><span class="mono">Jan 2020 - Nov 2020 &middot; Denver, Colorado</span>Senior Manager, Business Development.</p></div></div></div></div>
+      <div class="row rv"><div class="name">SupplyPro</div><div class="chips mono"><span class="chip scr">2017 - 2020</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp6">( + )</button><p class="desc">Vice President, Global Business Development</p><div class="more" id="xp6"><div><div class="in"><p><span class="mono">San Diego, California</span>Reported to the CEO and owned international business and go-to-market strategy for SupplyPro's inventory management software. Led the new inside sales organization at the San Diego headquarters.</p><p><a href="https://supplypro.com/Content/pdfs/SupplyPro%20Justin%20Dass%20Press%20Release.pdf" target="_blank" rel="noopener">Press release: appointment, 2017 &#8599;</a></p><p><a href="https://supplypro.com/Content/pdfs/SupplyPro%20Inside%20Sales%20Momentum%20Release_5.22.18%20FINAL.pdf" target="_blank" rel="noopener">Press release: inside sales launch, 2018 &#8599;</a></p></div></div></div></div>
+      <div class="row rv"><div class="name">Epicor Software</div><div class="chips mono"><span class="chip scr">2011 - 2017</span></div><button class="plus mono" type="button" aria-expanded="false" aria-controls="xp7">( + )</button><p class="desc">Director, Business Development, Americas<span class="promo mono">&uarr; Promoted from Sr. Manager</span></p><div class="more" id="xp7"><div><div class="in"><p><span class="mono">Jan 2014 - Jan 2017 &middot; Minneapolis-St. Paul</span>Director, Business Development, Americas. Sales pipeline management for ERP software.</p><p><span class="mono">Aug 2011 - Aug 2014 &middot; Minneapolis, Minnesota</span>Sr. Manager, Business Development.</p></div></div></div></div>
     </div>
+    <p class="edu mono rv">Other roles include Wrike, Dassault Syst&egrave;mes, Xerox and Rand Worldwide</p>
     <p class="edu mono rv">B.A., Organizational Communication, Cum Laude, Winona State University</p>
   </section>
 
@@ -382,6 +423,23 @@
         });
         document.querySelectorAll("#menu a").forEach(function (a) {
           a.addEventListener("click", function () { nav.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); });
+        });
+
+        // Experience rows open for detail
+        document.querySelectorAll(".xp .row").forEach(function (row) {
+          var btn = row.querySelector(".plus");
+          var more = row.querySelector(".more");
+          if (!btn || !more) { return; }
+          function toggle() {
+            var open = row.classList.toggle("open");
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+            btn.textContent = open ? "( - )" : "( + )";
+          }
+          btn.addEventListener("click", function (e) { e.stopPropagation(); toggle(); });
+          row.addEventListener("click", function (e) {
+            if (e.target.closest("a") || e.target.closest(".more")) { return; }
+            toggle();
+          });
         });
 
         // Word-by-word brighten on scroll
