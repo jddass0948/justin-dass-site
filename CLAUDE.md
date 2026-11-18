@@ -29,6 +29,8 @@ Dark editorial look modeled on lamalama.com's style (look and motion only, no co
 
 ## Requests in the queue (not started)
 
+Build these only if the site actually needs them and they will go live. Do not start any of them speculatively.
+
 1. Rebuild buttons and forms with shadcn/ui. This needs a move to Next.js plus Tailwind; Justin has not approved that yet. Ask first.
 2. Contact form that emails Justin through Resend on each submission. Needs a Resend account and API key from Justin, stored as a Vercel environment variable.
 3. PostHog analytics to see who visits. Needs Justin's PostHog project key.
