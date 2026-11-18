@@ -24,7 +24,8 @@ Dark editorial look modeled on lamalama.com's style (look and motion only, no co
 2. Focus: revenue, AI, enterprise software.
 3. Email CTA: Justin.Dass.2027@gmail.com. LinkedIn: https://www.linkedin.com/in/justin-dass-cro-global-sales-leader/
 4. Voice: concise, plain business language. No em dashes or en dashes. No buzzwords (leverage, synergy, scalable, seamless, etc.). "ASTERRA" always all caps.
-5. Open questions: OutSystems role is not listed yet (needs title and dates). PartnerOne "5x acquisitions of $100M+" line left out until Justin confirms the wording.
+5. Open question: PartnerOne "5x acquisitions of $100M+" line left out until Justin confirms the wording.
+6. No company logos on the site. The Experience list stays text only.
 
 ## Requests in the queue (not started)
 
